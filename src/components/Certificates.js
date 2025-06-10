@@ -1,13 +1,15 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 const images = [
-  '/Certificates/APS.png',
+  '/Certificates/python.png',
+  '/Certificates/ML.png',
   '/Certificates/DBMS.png',
+   '/Certificates/NLP.png',
+  '/Certificates/APS.png',
   '/Certificates/DSA.png',
   '/Certificates/JAVA.png',
-  '/Certificates/NLP.png',
-  '/Certificates/python.png',
   '/Certificates/RS.png',
+  
 ];
 
 // Clone first 3 items at the end for smooth transition
