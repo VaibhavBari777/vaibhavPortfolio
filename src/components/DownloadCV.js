@@ -1,19 +1,19 @@
 import React from 'react';
-import './DownloadCV.css'; // Optional: Add styling
 
-function DownloadCV() {
+const DownloadCV = () => {
   return (
-    <div className="download-cv">
+    <div className="fixed left-4 top-1/2 z-50 animate-bounce">
       <a
         href="/Vaibhav_CV.pdf"
         download="Vaibhav_Ramchandra_Bari_CV"
         target="_blank"
         rel="noopener noreferrer"
+        className="flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold py-3 px-5 rounded-full shadow-lg hover:scale-105 hover:rotate-1 transition-all duration-500"
       >
-        <button className="cv-button">Download CV</button>
+         <span>Download CV</span> 👈
       </a>
     </div>
   );
-}
+};
 
 export default DownloadCV;

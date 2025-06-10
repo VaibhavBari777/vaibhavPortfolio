@@ -30,8 +30,9 @@ const Contacts2 = () => {
   };
 
   return (
-    <section className="contact-section" id="contact">
-      <h2>Contact Me</h2>
+    <section className="py-16 px-6 bg-gradient-to-r from-gray-500 via-indigo-500 to-red-700 text-white">
+      <h2 className='text-4xl text-black text-center'>Contact Me</h2>
+      <br></br>
       <form className="contact-form" onSubmit={handleSubmit}>
         <input
           type="text"
