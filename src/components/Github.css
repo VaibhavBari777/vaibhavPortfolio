@@ -1,0 +1,16 @@
+.github-container {
+  position: fixed; /* Fix the position */
+  right: 20px; /* Distance from the right edge */
+  bottom: 20px; /* Distance from the bottom edge */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.github-logo {
+  width: 100px; /* Set the width of the logo */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.github-logo:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+}

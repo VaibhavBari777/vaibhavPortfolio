@@ -1,0 +1,41 @@
+.download-cv {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: #ffffff;
+}
+
+.cv-button {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #111827; /* Dark text */
+  background-color: #f3f4f6; /* Light gray background */
+  padding: 0.75rem 2.5rem;
+  border: none;
+  border-radius: 0.75rem; /* Rounded corners */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+              box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.cv-button:hover,
+.cv-button:focus {
+  background-color: #e5e7eb; /* Slightly darker gray on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  outline: none;
+}
+
+.cv-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+/* Accessibility: focus visible outline */
+.cv-button:focus-visible {
+  outline: 3px solid #2563eb; /* Bright blue focus ring */
+  outline-offset: 4px;
+}
+

@@ -1,0 +1,43 @@
+.about-section {
+  background-color: darkgrey; /* Light background */
+  padding: 50px 20px; /* Padding for the section */
+  text-align: center; /* Center text */
+}
+
+.about-container {
+  display: flex; /* Flexbox for layout */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  flex-direction: column; /* Stack items vertically */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-text {
+  margin-bottom: 20px; /* Space between text and image */
+  opacity: 0; /* Start hidden for fade-in effect */
+  transform: translateY(20px); /* Start slightly lower for slide effect */
+  animation: fadeInUp 0.6s forwards; /* Animation for text */
+}
+
+.about-image img {
+  width: 200px; /* Set image width */
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.about-image img:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInUp {
+  to {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Move to original position */
+  }
+}
+
+/* Animation for the entire container */
+.about-container:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+}
